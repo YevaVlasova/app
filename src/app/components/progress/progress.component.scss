@@ -1,0 +1,32 @@
+@import 'angular';
+
+.progress {
+    margin-top: 1.5rem;
+    &__title {
+        @include text($ff, 300, 1.8rem, 2.1rem, $lightViolet);
+        margin-bottom: 1.2rem;
+    }
+
+    &__line {
+        background: $lightPink;
+        border-radius: $radiusBar;
+        height: 0.8rem;
+        position: relative;
+    }
+
+    &__bar {
+        position: absolute;
+        width: 60%;
+        height: 0.4rem;
+        background: $darkPink;
+        border-radius: $radiusBar;
+        transition: $transition;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        
+    }
+    .value {
+        color: $darkPink;
+    }
+}

@@ -1,0 +1,16 @@
+@import 'angular';
+
+:host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .material-symbols-outlined {
+        color: $gray;
+        cursor: pointer;
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    .title {
+        @include text($ff, 500, 1.6rem, 1.9rem, $lightViolet);
+    }
+}

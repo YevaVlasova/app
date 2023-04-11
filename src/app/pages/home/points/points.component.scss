@@ -1,0 +1,42 @@
+@import 'angular';
+
+.point {
+    display: block;
+    text-decoration: none;
+    background: $blue;
+    border-radius: $radius;
+    padding: 2.3rem 2rem;
+    padding-right: 4.4rem;
+    position: relative;
+    display: flex;
+    gap: 1rem;
+
+    &__icon {
+        .material-symbols-outlined {
+            color: $violet;
+        }
+    }
+
+    &__info {
+    }
+
+    &__title {
+        @include text($ff, 400, 1.6rem, 1.9rem, $violet);
+        margin-bottom: 1rem;
+    }
+
+    &__desc {
+        @include text($ff, 400, 1.2rem, 1.4rem, $violet);
+        opacity: 0.5;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1.5rem;
+        .material-symbols-outlined {
+            color: $violet;
+        }
+    }
+}

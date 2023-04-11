@@ -1,0 +1,31 @@
+@import 'angular';
+
+.news {
+
+    &__title {
+        @include text($ff, 300, 2.4rem, 2.8rem, $lightViolet);
+    }
+
+    &__list {
+        margin-top: 1.5rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+        padding: 2rem 3rem 2.2rem 2rem;
+        border-radius: $radius;
+        @include text($ff, 500, 1.2rem, 1.4rem, $white);
+
+        &._pink {
+            background: $pinkGrad;
+            box-shadow: 0px 15px 25px rgba(115, 78, 133, 0.15);
+        }
+    
+        &._turquoise {
+            background: $turquoiseGrad;
+            box-shadow: 0px 15px 25px rgba(90, 116, 142, 0.15);
+        }
+    }
+}
