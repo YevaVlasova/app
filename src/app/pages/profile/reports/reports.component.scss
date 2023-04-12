@@ -1,0 +1,100 @@
+@import 'angular';
+
+:host {
+    margin-top: 2rem;
+}
+
+.reports {
+    background: $blue;
+    border-radius: $radius;
+    padding: 2rem;
+    position: relative;
+    text-decoration: none;
+
+    &__title {
+        @include text($ff, 300, 2.4rem, 2.8rem, $lightViolet);
+    }
+
+    &__list {
+        margin-top: 1.5rem;
+        display: grid;
+        gap: 1.1rem;
+        grid-template-columns: 1fr 1fr;
+
+        
+    }
+
+    &__icon {
+        width: 1.6rem;
+        height: 1.6rem;
+        margin-bottom: 1rem;
+        .material-symbols-outlined {
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+
+    &__desc {
+        @include text($ff, 400, 1rem, 1.2rem, nule);
+    }
+
+    &__info {
+    }
+
+    &__mark {
+        position: absolute;
+        top: 1rem;
+        transform: translateY(-50%);
+        right: 2rem;
+        .material-symbols-outlined {
+            width: 1.4rem;
+            height: 1.8rem;
+        }
+    }
+
+    &._blue {
+        background: $blue;
+        border-radius: $radius;
+        color: $violet;
+        .reports__desc {
+            @include text($ff, 400, 1rem, 1.2rem, $violet);
+            opacity: 0.5;
+        }
+
+    }
+
+    &._turquoise {
+        background: $lightTurquoise;
+        color: $turquoise;
+        .reports__desc {
+            color: $mediumTurquoise;
+            opacity: 0.7;
+        }
+    }
+
+    &._red {
+        background: $lightRed;
+        color: $red;
+        .reports__desc {
+            color: $beige;
+            opacity: 0.5;
+        }
+    }
+
+    &._pink {
+        background: $lightPink;
+        color: $darkPink;
+        .reports__desc {
+            color: $pink;
+            opacity: 0.7;
+        }
+    }
+}
+
+.reports-info {
+
+    &__title {
+        @include text($ff, 500, 1.2rem, 1.4rem, nule);
+        margin-bottom: 1rem;
+    }
+}
