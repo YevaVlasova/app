@@ -26,6 +26,9 @@ router-outlet {
 
 app-root {
     flex-grow: 1;
+    width: 100%;
     display: grid;
     grid-template-rows: auto 1fr auto;
+    max-width: 121rem;
+    margin: 0 auto;
 }

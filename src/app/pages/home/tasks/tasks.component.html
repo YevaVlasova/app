@@ -1,21 +1,21 @@
 <div class="tasks">
     <div class="tasks__title">Daily Tasks:</div>
     <div class="tasks__list">
-        <a class="tasks__item _blue">
+        <a class="tasks__item _blue" (click)="counter = '20'">
             <div>Daily astromeditation</div>
             <div class="tasks__counter">
                 <span>3</span>
                 <span class="material-symbols-outlined">language</span>
             </div>
         </a>
-        <a class="tasks__item _red">
+        <a class="tasks__item _red" (click)="counter = '50'">
             <div>Daily sleep astromeditation</div>
             <div class="tasks__counter">
                 <span>1</span>
                 <span class="material-symbols-outlined">language</span>
             </div>
         </a>
-        <a class="tasks__item _turquoise">
+        <a class="tasks__item _turquoise" (click)="counter = '100'">
             <div>Daily mantra</div>
             <div class="tasks__counter">
                 <span>2</span>
@@ -25,4 +25,4 @@
     </div>
 </div>
 
-<app-progress></app-progress>
+<app-progress [value]="counter"></app-progress>

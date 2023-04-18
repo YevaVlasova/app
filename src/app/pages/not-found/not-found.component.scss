@@ -1,0 +1,23 @@
+@import 'angular';
+
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+span {
+    color: $mediumRed;
+}
+
+h1 {
+    @include text($ff, 700, 3.6rem, 4.9rem, $activeRed);
+}
+
+p {
+    @include text($ff, 400, 2.6rem, 3.9rem, $mediumRed);
+    letter-spacing: 0.2rem;
+}
